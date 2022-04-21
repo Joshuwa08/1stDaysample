@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 public class Login extends BaseClass {
+
 	public Login() {
 		PageFactory.initElements(driver, this);
 	}
@@ -27,9 +29,15 @@ public class Login extends BaseClass {
 	
 	public void login() {
 		Login l=new Login();
+		
 		sendkeys(l.getUsername(), "jos");
 		sendkeys(l.getPassword(), "1234");
-		btnClick(l.getLogin());
+		btnClick(l.getLogin());     //1st
+
+		sendkeys(l.getUsername(), "joshuwa");
+		sendkeys(l.getPassword(), "98765");
+		btnClick(l.getLogin());    //2nd
+		
 	}
 	
 	
