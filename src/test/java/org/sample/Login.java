@@ -38,6 +38,9 @@ public class Login extends BaseClass {
 		sendkeys(l.getPassword(), "98765");
 		btnClick(l.getLogin());    //2nd
 		
+		System.out.println("user");
+		System.out.println("pass");
+		
 	}
 	
 	
